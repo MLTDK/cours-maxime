@@ -136,4 +136,23 @@ namespace outils_chaine {
 		}
 
 	}
+
+	int convertirEnEntier(const char* chaine) {
+		int taille = tailleChaine(chaine);
+
+		int resultat = 0;
+		int puissance = 1;
+		for (int i = taille - 1; i >= 0; i--) {
+			if (chaine[i] >= '0' && chaine[i] <= '9') {
+				resultat += puissance*(chaine[i] - '0');
+				puissance *= 10;
+			}
+			else if (chaine[i] == '-') {
+				resultat *= (-1);
+			}
+		}
+
+		return resultat;
+	}
+
 }

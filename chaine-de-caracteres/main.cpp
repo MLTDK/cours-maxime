@@ -1,12 +1,10 @@
 #include <iostream>
+#include <string>
 #include "outils_chaine.h"
+#include "derivees.h"
 using namespace std;
 
 namespace tests {
-	
-	// Fonction qui compare deux valeurs:
-	// La première valeur est celle calculée par la fonction à tester
-	// La seconde est la valeur espérée	
 	template<typename T>
 	void assert(const T& val, const T& expected_val) {
 		cout << "Received : " << val << " Expected : " << expected_val;
@@ -29,9 +27,7 @@ int main(void)
 	tests::assert<int>(outils_chaine::tailleChaine(mot_palindrome), 5);
 	tests::assert<int>(outils_chaine::nombreVoyelles("Îles Féroë"), 5);
 	tests::assert<bool>(outils_chaine::contientCaractere("Je ne contiens pas la lettre Z minuscule",'z'), false);
-
-
-	
+	tests::assert<int>(outils_chaine::convertirEnEntier("-00532"), -532);
 
 	//Ce code est ajouté pour que le programme ne se termine pas abruptement	
 	cout << "Press any key to exit" << endl;

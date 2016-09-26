@@ -30,4 +30,8 @@ namespace outils_chaine {
 	//correspondant à la séparation de la chaine
 	//selon un caractère donné
 	char** separerChaine(const char*, const char);
+
+	//Retourne un entier à partir d'une chaîne de caractères
+	int convertirEnEntier(const char*);
+
 }
