@@ -1,0 +1,5 @@
+bin/
+obj/
+*.depend
+[dD]ebug/
+[rR]elease/
