@@ -8,7 +8,7 @@ int pgcd(const int a, const int b) {
 bool test_pgcd() {
 	bool res = true;
 
-	std::cout << "------------------- DEBUT DES TESTS PGCD --------------------------" << std::endl;
+	std::cout << "=================== DEBUT DES TESTS PGCD ==========================" << std::endl;
 	std::cout << "Test 1 :" << std::endl;
 	res = tests::assert_equal<int>(pgcd(100, 100), 100) && res;
 	std::cout << "-----------------------------------------------------" << std::endl;
@@ -23,7 +23,7 @@ bool test_pgcd() {
 
 	std::cout << "Test 4 :" << std::endl;
 	res = tests::assert_equal<int>(pgcd(57, 31), 1) && res;
-	std::cout << "------------------- FIN DES TESTS PGCD --------------------------" << std::endl;
-
+	std::cout << "=================== FIN DES TESTS PGCD ==========================" << std::endl;
+	std::cout << "\n\n" << std::endl;
 	return res;
 }

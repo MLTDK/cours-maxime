@@ -32,8 +32,10 @@
 			<Add option="-Wall" />
 			<Add directory="include" />
 		</Compiler>
+		<Unit filename="include/date.h" />
 		<Unit filename="include/pgcd.h" />
 		<Unit filename="include/unit_tests.h" />
+		<Unit filename="src/date.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/pgcd.cpp" />
 		<Extensions>
