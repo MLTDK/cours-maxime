@@ -3,17 +3,17 @@
 
 char* derivee(const char*);
 
-// Renvoie un tableau de chaines de caractères
-// représentant les monômes extraits d'une chaîne de caractères
+// Renvoie un tableau de chaines de caractÃ¨res
+// reprÃ©sentant les monÃ´mes extraits d'une chaÃ®ne de caractÃ¨res
 char** separerMonomes(const char*);
 
-// Renvoie des coefficients d'un monôme
+// Renvoie des coefficients d'un monÃ´me
 int* chaineEnInt(const char*);
 
-// Renvoie 2 coefficients correspondant à une dérivée
+// Renvoie 2 coefficients correspondant Ã  une dÃ©rivÃ©e
 int* coeffDerivee(const int*);
 
-// Renvoie une chaîne de caractères à partir de 2 coefficients
+// Renvoie une chaÃ®ne de caractÃ¨res Ã  partir de 2 coefficients
 char* intEnChaine(const int*);
 
 void assembler();
